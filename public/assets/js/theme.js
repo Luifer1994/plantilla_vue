@@ -324,18 +324,6 @@ var detectorInit = function detectorInit() {
   var _window = window,
       is = _window.is;
   var html = document.querySelector('html');
-  is.opera() && addClass(html, 'opera');
-  is.mobile() && addClass(html, 'mobile');
-  is.firefox() && addClass(html, 'firefox');
-  is.safari() && addClass(html, 'safari');
-  is.ios() && addClass(html, 'ios');
-  is.iphone() && addClass(html, 'iphone');
-  is.ipad() && addClass(html, 'ipad');
-  is.ie() && addClass(html, 'ie');
-  is.edge() && addClass(html, 'edge');
-  is.chrome() && addClass(html, 'chrome');
-  is.mac() && addClass(html, 'osx');
-  is.windows() && addClass(html, 'windows');
   navigator.userAgent.match('CriOS') && addClass(html, 'chrome');
 };
 /*-----------------------------------------------
@@ -895,7 +883,7 @@ var draggableInit = function draggableInit() {
 -----------------------------------------------*/
 
 
-var dropdownMenuInit = function dropdownMenuInit() {
+/* var dropdownMenuInit = function dropdownMenuInit() {
   // Only for ios
   if (window.is.ios()) {
     var Event = {
@@ -919,7 +907,8 @@ var dropdownMenuInit = function dropdownMenuInit() {
       });
     });
   }
-}; // Reference
+};  */
+// Reference
 // https://github.com/twbs/bootstrap/issues/11037#issuecomment-274870381
 
 /* -------------------------------------------------------------------------- */
@@ -3890,7 +3879,7 @@ var scrollToTop = function scrollToTop() {
 /* -------------------------------------------------------------------------- */
 
 
-var scrollbarInit = function scrollbarInit() {
+/* var scrollbarInit = function scrollbarInit() {
   Array.prototype.forEach.call(document.querySelectorAll('.scrollbar-overlay'), function (el) {
     return new window.OverlayScrollbars(el, {
       scrollbars: {
@@ -3899,7 +3888,7 @@ var scrollbarInit = function scrollbarInit() {
       }
     });
   });
-};
+}; */
 
 var searchInit = function searchInit() {
   var Selectors = {
@@ -10662,7 +10651,6 @@ docReady(salesByPosLocationInit);
 docReady(returningCustomerRateInit);
 docReady(candleChartInit);
 docReady(grossRevenueChartInit);
-docReady(scrollbarInit);
 docReady(iconCopiedInit);
 docReady(reportForThisWeekInit);
 docReady(basicEchartsInit);
@@ -10672,7 +10660,7 @@ docReady(chartPie);
 docReady(chartPolar);
 docReady(chartRadar);
 docReady(chartCombo);
-docReady(dropdownMenuInit);
+/* docReady(dropdownMenuInit); */
 docReady(audienceChartInit);
 docReady(sessionByBrowserChartInit);
 docReady(sessionByCountryChartInit);
