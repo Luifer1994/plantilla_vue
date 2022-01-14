@@ -11,6 +11,8 @@
     "apexcharts": "^3.33.0",
     "core-js": "^3.6.5",
     "echarts": "^5.2.2",
+    "http-server": "^14.1.0",
+    "ngrok": "^4.2.2",
     "register-service-worker": "^1.7.1",
     "vue": "^3.0.0",
     "vue-apexcharts": "^1.6.2",
